@@ -1,0 +1,73 @@
+<!DOCTYPE html>More actions
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enhanced Product Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="product">
+      <img src="showes.png" alt="Stylish Shoes" class="product-img" />
+      <div class="product-info">
+        <h2 class="brand">Nike</h2>
+        <h1 class="title">Nike Air Max 2024</h1>
+
+        <div class="rating">
+          ⭐⭐⭐⭐☆ (4.5) • <span>210 reviews</span>
+        </div>
+
+        <p class="description">
+          Experience unmatched comfort and style with the Nike Air Max 2024. Designed for both casual and athletic wear with improved cushioning.
+        </p>
+
+        <div class="price">
+          <span class="discounted">₹4,999</span>
+          <span class="original">₹6,499</span>
+          <span class="offer">23% OFF</span>
+        </div>
+
+        <div class="availability">
+          ✅ In Stock
+        </div>
+
+        <div class="selectors">
+          <div class="size-selector">
+            <label for="size">Size:</label>
+            <select id="size">
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+            </select>
+          </div>
+
+          
+          <div class="quantity-selector">
+            <label>Qty:</label>
+            <button onclick="changeQuantity(-1)">-</button>
+            <span id="quantity">1</span>
+            <button onclick="changeQuantity(1)">+</button>
+          </div>
+        </div>
+
+        <button class="add-to-cart" onclick="addToCart()">Add to Cart 🛒</button>
+      </div>
+    </div>
+
+    <div class="cart-icon" onclick="toggleCart()">
+      🛍️ <span id="cart-count">0</span>
+    </div>
+  </div>
+
+  <div class="cart-modal" id="cart-modal">
+    <h2>Your Cart</h2>
+    <div id="cart-items"></div>
+    <button onclick="toggleCart()">Close</button>
+  </div>
+
+  <script src="first.js"></script>
+</body>
+</html>
